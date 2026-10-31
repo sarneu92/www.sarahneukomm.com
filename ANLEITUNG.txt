@@ -1,0 +1,72 @@
+SARAH NEUKOMM – WEBSEITE
+
+1. ZIP UNTER WINDOWS ÖFFNEN
+Rechtsklick auf sarah-neukomm-website.zip > Alle extrahieren > Extrahieren.
+Im entpackten Ordner index.html mit Edge, Chrome oder Firefox öffnen.
+Die Dateien vollständig entpacken; die HTML-Datei nicht direkt in der ZIP öffnen.
+Es sind keine Installation und kein Build-Schritt nötig.
+
+2. AUF GITHUB HOCHLADEN
+Bei github.com anmelden und ein neues öffentliches Repository erstellen,
+zum Beispiel sarah-neukomm-website. Bei einem kostenlosen Konto ein öffentliches
+Repository verwenden. Eine README beim Erstellen hinzufügen, damit main existiert.
+Im Repository: Add file > Upload files.
+Die DATEIEN aus der entpackten ZIP hineinziehen, nicht die ZIP selbst und nicht
+den darüberliegenden Ordner. Anschliessend Commit changes bestätigen.
+
+Auf der obersten Ebene müssen diese Dateien liegen:
+  index.html
+  site.js
+  ocean-light.mp4
+  poster.jpg
+  sarah-neukomm.jpg
+  .nojekyll                 (falls Windows diese Datei nicht zeigt: siehe unten)
+  README.md
+
+3. GITHUB PAGES AKTIVIEREN
+Im Repository Settings > Pages öffnen.
+Unter Build and deployment:
+  Source: Deploy from a branch
+  Branch: main
+  Folder: / (root)
+Auf Save klicken. Nach erfolgreichem Deployment erscheint dort der Webseiten-Link.
+Bei diesem Repository-Namen ist er normalerweise:
+  https://DEIN-GITHUB-NAME.github.io/sarah-neukomm-website/
+Den tatsächlich von GitHub angezeigten Link verwenden. Der erste Aufbau kann
+einige Minuten dauern; bei Fehlern den Actions-Tab prüfen.
+
+Falls .nojekyll beim Hochladen fehlt: Add file > Create new file, als Dateiname
+.nojekyll eingeben, eine leere Zeile als Inhalt lassen und Commit changes wählen.
+
+4. KURZ PRÜFEN
+- DE und EN wechseln: Texte, Navigation und Bildbeschreibung wechseln mit.
+- Die fünf Leistungen, Porträt und E-Mail-Link kontrollieren.
+- Die Seite auch auf einem Smartphone öffnen.
+- Im Hero sollten sich die Lichtmuster bewegen; das dezente Pause-Symbol hält das Video an.
+- Wenn der Browser automatische Wiedergabe blockiert: das Play-Symbol (Dreieck nach rechts) anklicken.
+- Bei aktivierter Betriebssystem-Einstellung für weniger Bewegung bleibt
+  das Standbild sichtbar. Das Video wird zunächst nicht geladen.
+- Bei einem Ladefehler bleibt ebenfalls das Standbild sichtbar.
+
+5. WENN DAS VIDEO NICHT ANGEZEIGT WIRD
+In der veröffentlichten Seitenadresse index.html durch ocean-light.mp4 ersetzen
+(oder ocean-light.mp4 an die Adresse mit abschliessendem / anhängen).
+Wird die Datei nicht gefunden, liegt sie nicht direkt neben index.html oder ihr
+Name stimmt nicht exakt. GitHub unterscheidet Gross-/Kleinschreibung.
+Dateinamen unverändert lassen. Keine Windows-Pfade in die HTML-Datei schreiben.
+Zum Aktualisieren alle geänderten Dateien erneut hochladen und committen.
+Danach gegebenenfalls mit Strg+F5 neu laden.
+
+PRÜFSTATUS DIESER LIEFERUNG
+Die ZIP enthält das vorhandene MP4 und Standbild aus dem Prototyp sowie das
+nachgereichte Porträt. MP4: H.264/AVC, Metadaten am Dateianfang (Fast Start).
+Dateipfade, ZIP-Inhalt, HTML-Struktur und JavaScript-Syntax wurden offline geprüft.
+Videosteuerung, Sprachwechsel, Reduced Motion, Fehlerfall und blockiertes
+Autoplay wurden mit einem simulierten DOM geprüft.
+Eine echte Browser-Wiedergabe und visuelle Mobilprüfung konnten in dieser
+Arbeitsumgebung wegen Zugriffs-/Browserbeschränkungen nicht durchgeführt werden.
+Die Seite wurde nicht auf GitHub veröffentlicht.
+
+Offizielle GitHub-Anleitungen:
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
